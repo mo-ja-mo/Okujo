@@ -34,7 +34,6 @@
 [s  ]
 *様子を見る
 
-[playse  volume="100"  time="1000"  buf="0"  storage="Click.mp3"  ]
 [tb_eval  exp="f.likability+=1"  name="likability"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
 [tb_show_message_window  ]
 [jump  storage="day2.ks"  target="*様子を見る_好感度高"  cond="f.likability>5"  ]
@@ -52,7 +51,6 @@
 [jump  storage="day2.ks"  target="*day_end"  ]
 *雑談をする
 
-[playse  volume="100"  time="1000"  buf="0"  storage="Click.mp3"  ]
 [chara_move  name="mizuki"  anim="false"  time="300"  effect="linear"  wait="true"  left="470"  top="120"  width="437"  height="566"  ]
 [chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.PNG"  width="500"  height="650"  left="115"  top="-5"  reflect="false"  ]
 [tb_eval  exp="f.likability+=1"  name="likability"  cmd="+="  op="t"  val="1"  ]
@@ -81,7 +79,6 @@
 [s  ]
 *サプライズをする
 
-[playse  volume="100"  time="1000"  buf="0"  storage="Click.mp3"  ]
 [tb_eval  exp="f.likability+=1"  name="likability"  cmd="+="  op="t"  val="1"  ]
 [chara_move  name="mizuki"  anim="false"  time="300"  effect="linear"  wait="true"  left="470"  top="120"  width="437"  height="566"  ]
 [chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.PNG"  width="500"  height="650"  left="115"  top="-5"  reflect="false"  ]
@@ -110,7 +107,6 @@
 [s  ]
 *作業をする
 
-[playse  volume="100"  time="1000"  buf="0"  storage="Click.mp3"  ]
 [tb_eval  exp="f.likability+=1"  name="likability"  cmd="+="  op="t"  val="1"  ]
 [chara_hide  name="mizuki"  time="1000"  wait="true"  pos_mode="true"  ]
 [chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.PNG"  width="500"  height="650"  ]
@@ -119,6 +115,7 @@
 僕は書きかけの演出案を練ることにして、ノートを取り出した。[p]
 [_tb_end_text]
 
+[chara_mod  name="rui"  time="600"  cross="true"  storage="chara/2/rui_takurami.PNG"  ]
 [jump  storage="day2.ks"  target="*作業をする_好感度高"  cond="f.likability>5"  ]
 [tb_start_text mode=1 ]
 ふと視線を感じて顔を上げると、僕を怪訝そうに見ていた瑞希くんと目が合った。[p]

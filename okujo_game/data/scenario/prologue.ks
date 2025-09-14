@@ -1,13 +1,10 @@
 [_tb_system_call storage=system/_prologue.ks]
 
 [cm  ]
-[playse  volume="100"  time="1000"  buf="0"  storage="Click.mp3"  ]
-[stopbgm  time="500"  fadeout="true"  ]
 [tb_ptext_hide  time="1000"  ]
 [bg  storage="room.jpg"  time="1000"  ]
 [tb_hide_message_window  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
-[playbgm  volume="40"  time="1000"  loop="true"  storage="PrologeSong.mp3"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=3 ]
 代わり映えのしない、いつもの朝。[r]

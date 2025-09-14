@@ -1,4 +1,6 @@
-[eval exp="f._system_preview_ks='day2.ks'"] 
+[eval exp="f._system_preview_ks='day7.ks'"] 
 [preload  storage="./data/bgimage/room.jpg"  ]
 [preload  storage="./data/bgimage/okujyo_normal.png"  ]
+[preload  storage="./data/fgimage/chara/1/mzk_smile.PNG"  ]
+[preload  storage="./data/fgimage/chara/2/rui_takurami.PNG"  ]
 [return] 

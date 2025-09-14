@@ -10,7 +10,6 @@
 [s  ]
 *cp_select
 
-[playse  volume="100"  time="1000"  buf="0"  storage="Click.mp3"  ]
 [tb_ptext_hide  time="1000"  ]
 [tb_ptext_show  x="250"  y="200"  size="30"  color="0xffffff"  time="100"  text="どちらのルートを解放しますか？"  anim="false"  face="sans-serif,'メイリオ'"  edge="undefined"  shadow="undefined"  ]
 [glink  color="white"  storage="question.ks"  size="20"  text="類瑞ルート"  autopos="false"  target="*ruimizu_select"  x="250"  y="350"  width=""  height=""  _clickable_img=""  ]
@@ -18,27 +17,23 @@
 [s  ]
 *friendship_select
 
-[playse  volume="100"  time="1000"  buf="0"  storage="Click.mp3"  ]
 [tb_ptext_hide  time="1000"  ]
 [tb_ptext_show  x="300"  y="200"  size="30"  color="0xffffff"  time="2000"  text="友情ルートに固定されました。"  ]
 [jump  storage="question.ks"  target="*question_end"  ]
 *ruimizu_select
 
-[playse  volume="100"  time="1000"  buf="0"  storage="Click.mp3"  ]
 [tb_ptext_hide  time="1000"  ]
 [tb_eval  exp="f.cp_flag=6"  name="cp_flag"  cmd="="  op="t"  val="6"  val_2="undefined"  ]
 [tb_ptext_show  x="250"  y="200"  size="30"  color="0xffffff"  time="2000"  text="類瑞ルートが解放されました。"  ]
 [jump  storage="question.ks"  target="*question_end"  ]
 *mizurui_select
 
-[playse  volume="100"  time="1000"  buf="0"  storage="Click.mp3"  ]
 [tb_ptext_hide  time="1000"  ]
 [tb_eval  exp="f.cp_flag=3"  name="cp_flag"  cmd="="  op="t"  val="3"  val_2="undefined"  ]
 [tb_ptext_show  x="250"  y="200"  size="30"  color="0xffffff"  time="2000"  text="瑞類ルートが解放されました。"  ]
 [jump  storage="question.ks"  target="*question_end"  ]
 *question_end
 
-[stopbgm  time="500"  fadeout="true"  ]
 [tb_ptext_hide  time="1000"  ]
 [jump  storage="day1.ks"  target="*day1_start"  ]
 [s  ]

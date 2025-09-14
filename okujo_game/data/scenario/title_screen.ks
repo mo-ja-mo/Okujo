@@ -10,14 +10,12 @@
 [bg  storage="title.jpg"  ]
 *title
 
-[playbgm  volume="100"  time="1000"  loop="true"  storage="Title.wav"  ]
 [tb_image_show  time="1000"  storage="default/title.png"  width="914"  height="611"  x="4"  y="28"  _clickable_img=""  name="img_7"  ]
 [glink  color="black"  text="はじめから"  x="600"  y="370"  size="24"  target="*start"  ]
 [glink  color="black"  text="つづきから"  x="600"  y="470"  size="24"  target="*load"  ]
 [s  ]
 *start
 
-[playse  volume="100"  time="1000"  buf="0"  storage="Click.mp3"  ]
 [showmenubutton]
 
 [cm  ]
@@ -33,7 +31,6 @@
 [s  ]
 *load
 
-[playse  volume="100"  time="1000"  buf="0"  storage="Click.mp3"  ]
 [cm  ]
 [showload]
 

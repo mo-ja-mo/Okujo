@@ -7,7 +7,6 @@
 [tb_ptext_show  x="387.00001525878906"  y="206.00001525878906"  size="49"  color="0xded3d7"  time="2000"  text="Day&nbsp;1"  anim="false"  face="cursive"  edge="undefined"  shadow="0x140e0e"  ]
 [wait  time="1000"  ]
 [tb_show_message_window  ]
-[playbgm  volume="100"  time="1000"  loop="true"  storage="DailySong.wav"  ]
 [tb_start_text mode=1 ]
 晴れた月曜日の朝。いつものように登校して、自分の席に座る。[p]
 普段は授業を聞き流しながら脚本を書いたり、演出プランを練ったり、それなりに充実した時間を過ごしているのに、最近はつい窓の外を気にしてしまう。[p]
@@ -23,7 +22,6 @@
 [s  ]
 *教室にいる
 
-[playse  volume="100"  time="1000"  buf="0"  storage="Click.mp3"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 昨日は徹夜で作業に没頭してしまった。[p]
@@ -36,7 +34,6 @@
 [s  ]
 *屋上に行く
 
-[playse  volume="100"  time="1000"  buf="0"  storage="Click.mp3"  ]
 [bg  time="1000"  method="fadeIn"  storage="okujyo_normal.png"  ]
 [tb_show_message_window  ]
 [chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.PNG"  width="500"  height="648"  left="239"  top="74"  reflect="false"  ]
@@ -52,7 +49,6 @@
 [s  ]
 *様子を見る
 
-[playse  volume="100"  time="1000"  buf="0"  storage="Click.mp3"  ]
 [tb_eval  exp="f.likability+=1"  name="likability"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
 [tb_show_message_window  ]
 [jump  storage="day1.ks"  target="*様子を見る_好感度高"  cond="f.likability>5"  ]
@@ -70,7 +66,6 @@
 [jump  storage="day1.ks"  target="*day_end"  ]
 *雑談をする
 
-[playse  volume="100"  time="1000"  buf="0"  storage="Click.mp3"  ]
 [chara_move  name="mizuki"  anim="false"  time="300"  effect="linear"  wait="true"  left="380"  top="89"  width="500"  height="648"  ]
 [chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.PNG"  width="500"  height="650"  left="115"  top="-5"  reflect="false"  ]
 [tb_eval  exp="f.likability+=1"  name="likability"  cmd="+="  op="t"  val="1"  ]
@@ -115,7 +110,6 @@
 [s  ]
 *作業をする
 
-[playse  volume="100"  time="1000"  buf="0"  storage="Click.mp3"  ]
 [tb_eval  exp="f.likability+=1"  name="likability"  cmd="+="  op="t"  val="1"  ]
 [chara_hide  name="mizuki"  time="1000"  wait="true"  pos_mode="true"  ]
 [chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.PNG"  width="500"  height="650"  ]

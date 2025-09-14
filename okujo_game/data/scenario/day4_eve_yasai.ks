@@ -7,7 +7,6 @@
 [tb_ptext_show  x="387.00001525878906"  y="206.00001525878906"  size="49"  color="0xded3d7"  time="2000"  text="Day&nbsp;4"  anim="false"  face="cursive"  edge="undefined"  shadow="0x140e0e"  ]
 [wait  time="1000"  ]
 [tb_show_message_window  ]
-[playbgm  volume="50"  time="1000"  loop="true"  storage="NonbiriEvent.wav"  ]
 [tb_start_text mode=1 ]
 今日は午前中に小テストや実習があり、なかなか屋上に行けなかった。[p]
 #類
@@ -45,7 +44,6 @@
 [s  ]
 *照り焼き
 
-[playse  volume="100"  time="1000"  buf="0"  storage="Click.mp3"  ]
 [tb_eval  exp="f.likability+=1"  name="likability"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
 [chara_hide  name="mizuki"  time="1000"  wait="true"  pos_mode="true"  ]
 [tb_show_message_window  ]
@@ -108,7 +106,6 @@
 [jump  storage="day4_eve_yasai.ks"  target="*day_end"  ]
 *カレーパン
 
-[playse  volume="100"  time="1000"  buf="0"  storage="Click.mp3"  ]
 [tb_eval  exp="f.likability+=1"  name="likability"  cmd="+="  op="t"  val="1"  ]
 [chara_hide  name="mizuki"  time="1000"  wait="true"  pos_mode="true"  ]
 [tb_show_message_window  ]
@@ -140,7 +137,6 @@
 [s  ]
 *ルーを除去
 
-[playse  volume="100"  time="1000"  buf="0"  storage="Click.mp3"  ]
 [chara_hide  name="mizuki"  time="1000"  wait="true"  pos_mode="true"  ]
 [tb_start_text mode=1 ]
 これを食べるにはルーを除去する必要がある。[p]
@@ -181,7 +177,6 @@
 [s  ]
 *食べるのをやめる
 
-[playse  volume="100"  time="1000"  buf="0"  storage="Click.mp3"  ]
 [chara_hide  name="mizuki"  time="1000"  wait="true"  pos_mode="true"  ]
 [tb_start_text mode=1 ]
 僕は取り出したカレーパンをもう一度バッグに戻した。[p]
@@ -234,6 +229,5 @@ alert("今の好感度は"+f.likability+"です");
 
 [chara_hide_all  time="1000"  wait="true"  ]
 [tb_image_hide  time="1000"  ]
-[stopbgm  time="500"  fadeout="true"  ]
-[jump  storage="day4_eve_yasai.ks"  target="*day4_start"  ]
+[jump  storage="day5.ks"  target="*day5_start"  ]
 [s  ]

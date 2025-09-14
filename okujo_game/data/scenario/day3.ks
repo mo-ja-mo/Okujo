@@ -62,7 +62,6 @@
 [s  ]
 *手を伸ばす
 
-[playse  volume="100"  time="1000"  buf="0"  storage="Click.mp3"  ]
 [tb_eval  exp="f.likability+=1"  name="likability"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
@@ -127,7 +126,6 @@
 [jump  storage="day3.ks"  target="*day_end"  ]
 *道具を使う
 
-[playse  volume="100"  time="1000"  buf="0"  storage="Click.mp3"  ]
 [tb_eval  exp="f.likability+=2"  name="likability"  cmd="+="  op="t"  val="2"  val_2="undefined"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
@@ -191,6 +189,5 @@ alert("今の好感度は"+f.likability+"です");
 
 [chara_hide_all  time="1000"  wait="true"  ]
 [tb_image_hide  time="1000"  ]
-[stopbgm  time="500"  fadeout="true"  ]
 [jump  storage="day4_eve_yasai.ks"  target="*day4_start"  ]
 [s  ]
