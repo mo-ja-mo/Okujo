@@ -288,8 +288,8 @@ window.gMessageTester = {
 		// 挿入
 		.appendTo(".layer_free")
 		// エリアクリック/スクロール時の処理
-		.click(this.next)
-		.on(scroll, this.next);
+		.click(() => this.next())
+		.on(scroll, () => this.next());
 		// スタイルのセット
 		if (!this.style["font-weight"]) area.css("font-weight", font.bold);
 		if (!this.style["font-size"  ]) area.css("font-size"  , font.size + "px");
