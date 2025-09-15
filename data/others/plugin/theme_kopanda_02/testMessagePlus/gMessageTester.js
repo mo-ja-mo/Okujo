@@ -265,7 +265,6 @@ window.gMessageTester = {
 		// 文末に達していなければ表示を急がせる
 		else {
 			TM.shouldHarryUp = true;
-        	TM.update(); // ←これを追加
 		};
 	};
 
