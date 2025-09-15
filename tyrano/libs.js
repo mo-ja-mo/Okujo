@@ -435,11 +435,11 @@
                 const order_str = text;
                 callback(order_str);
             },
-            error: function () {
-                if (window.TYRANO) window.TYRANO.kag.hideLoadingLog();
-                alert($.lang("file_not_found", { path: file_path }));
-                callback("");
-            },
+            // error: function () {
+            //     if (window.TYRANO) window.TYRANO.kag.hideLoadingLog();
+            //     alert($.lang("file_not_found", { path: file_path }));
+            //     callback("");
+            // },
         });
     };
 
@@ -462,11 +462,11 @@
                     resolve(order_str);
                 },
 
-                error: function () {
-                    if (window.TYRANO) window.TYRANO.kag.hideLoadingLog();
-                    alert($.lang("file_not_found", { path: file_path }));
-                    reject();
-                },
+                // error: function () {
+                //     if (window.TYRANO) window.TYRANO.kag.hideLoadingLog();
+                //     alert($.lang("file_not_found", { path: file_path }));
+                //     reject();
+                // },
             });
         });
     };
