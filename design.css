@@ -53,11 +53,16 @@ h1 {
     color: darkcyan;
 }
 
-a {
-    font-size: 30px;
+h1 :link {
+    color: darkcyan;
     text-decoration: none;
-    color: black;
 }
+
+h1 :visited {
+    color: darkcyan;
+    text-decoration: none;
+}
+
 
 button {
     font-size: 30px;
