@@ -1,0 +1,5 @@
+[preload  storage="./data/bgimage/room.jpg"  ]
+[preload  storage="./data/bgimage/kaidan.jpg"  ]
+[preload  storage="./data/bgimage/okujyo_normal.png"  ]
+[preload  storage="./data/fgimage/chara/1/mzk_smile.png"  ]
+[return]

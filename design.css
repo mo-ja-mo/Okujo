@@ -23,6 +23,14 @@ body {
     height: auto;
 }
 
+.warning {
+    color: rgb(88, 88, 88);
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
 .comment {
     color: rgb(88, 88, 88);
     background-color: rgba(255, 255, 255);

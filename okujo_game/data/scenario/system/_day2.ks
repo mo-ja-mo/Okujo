@@ -1,4 +1,6 @@
 [preload  storage="./data/bgimage/room.jpg"  ]
 [preload  storage="./data/bgimage/okujyo_normal.png"  ]
-[preload  storage="./data/fgimage/chara/2/rui_takurami.PNG"  ]
+[preload  storage="./data/fgimage/chara/1/mzk_mouthopen.png"  ]
+[preload  storage="./data/fgimage/chara/1/mzk_normal.png"  ]
+[preload  storage="./data/fgimage/chara/2/rui_takurami.png"  ]
 [return]

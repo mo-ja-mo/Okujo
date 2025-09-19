@@ -3,8 +3,9 @@
 *day3_start
 
 [cm  ]
-[bg  storage="room.jpg"  time="1000"  ]
-[tb_ptext_show  x="387.00001525878906"  y="206.00001525878906"  size="49"  color="0xded3d7"  time="2000"  text="Day&nbsp;3"  anim="false"  face="cursive"  edge="undefined"  shadow="0x140e0e"  ]
+[tb_eval  exp="f.likability+=0"  name="likability"  cmd="+="  op="t"  val="0"  ]
+[bg  storage="room_cloudy.jpg"  time="1000"  ]
+[tb_ptext_show  x="386.9999694824219"  y="218.00001525878906"  size="50"  color="0xded3d7"  time="2000"  text="Day&nbsp;3"  anim="false"  face="cursive"  edge="undefined"  shadow="0x140e0e"  ]
 [wait  time="1000"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
@@ -14,8 +15,8 @@
 
 [tb_ptext_hide  time="1000"  ]
 [tb_hide_message_window  ]
-[bg  time="1000"  method="fadeIn"  storage="okujyo_normal.png"  ]
-[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.PNG"  width="500"  height="650"  left="115"  top="-5"  reflect="false"  ]
+[bg  time="1000"  method="fadeIn"  storage="okujyo_cloudy.png"  ]
+[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.png"  width="400"  height="950"  left="150"  top="0"  reflect="false"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #類
@@ -23,14 +24,14 @@
 #
 [_tb_end_text]
 
-[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.PNG"  width="440"  height="570"  left="481"  top="120"  reflect="false"  ]
+[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.png"  width="365"  height="865"  left="510"  top="70"  reflect="false"  ]
 [tb_start_text mode=1 ]
 瑞希くんは先に来ていたようだ。[p]
 僕らは思い思いの場所に座って、バッグを取り出した。[p]
 [_tb_end_text]
 
 [chara_hide_all  time="1000"  wait="true"  ]
-[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_mouthopen.PNG"  width="440"  height="570"  top="120"  ]
+[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_mouthopen.png"  width="365"  height="865"  left="320"  top="70" ]
 [tb_start_text mode=1 ]
 #瑞希
 「あっ！」[p]
@@ -41,7 +42,7 @@
 [_tb_end_text]
 
 [chara_hide  name="mizuki"  time="500"  wait="true"  pos_mode="true"  ]
-[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_aseri.PNG"  width="500"  height="650"  ]
+[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_aseri.png"  width="400"  height="950"  ]
 [tb_start_text mode=1 ]
 #類
 「落ちてしまったのかい？」[p]
@@ -68,8 +69,8 @@
 僕は床に腹ばいになって、バッジに手を伸ばした。[p]
 [_tb_end_text]
 
-[chara_move  name="rui"  anim="false"  time="300"  effect="linear"  wait="true"  left="87"  top="0"  width="500"  height="650"  ]
-[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_mouthopen.PNG"  width="440"  height="570"  left="416"  top="120"  reflect="false"  ]
+[chara_move  name="rui"  anim="false"  time="300"  effect="linear"  wait="true"  left="87"  top="0"  width="400"  height="950"  ]
+[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_mouthopen.png"  width="365"  height="865"  left="510"  top="70" reflect="false"  ]
 [tb_start_text mode=1 ]
 #瑞希
 「先輩、そこ汚いから汚れちゃうよ」[p]
@@ -88,7 +89,7 @@
 [_tb_end_text]
 
 [chara_hide  name="rui"  time="1000"  wait="true"  pos_mode="true"  ]
-[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_mouthopen.PNG"  width="440"  height="570"  top="120"  ]
+[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_mouthopen.png"  width="365"  height="865"  left="320"  top="70"  ]
 [jump  storage="day3.ks"  target="*手を伸ばす_好感度高"  cond="f.likability>3"  ]
 [tb_start_text mode=1 ]
 #瑞希
@@ -105,8 +106,8 @@
 #
 [_tb_end_text]
 
-[chara_move  name="mizuki"  anim="false"  time="300"  effect="linear"  wait="true"  left="438"  top="120"  width="440"  height="570"  ]
-[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_smile.PNG"  width="500"  height="650"  left="116"  top="0"  reflect="false"  ]
+[chara_move  name="mizuki"  anim="false"  time="300"  effect="linear"  wait="true"  left="510"  top="70"  width="365"  height="865"  ]
+[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_smile.png"  width="400"  height="950"  left="150"  top="0"  reflect="false"  ]
 [tb_start_text mode=1 ]
 白いシャツを脱いで渡すと、瑞希くんは丁寧に汚れを払ってくれた。[p]
 #瑞希
@@ -116,7 +117,7 @@
 [_tb_end_text]
 
 [chara_hide_all  time="1000"  wait="true"  ]
-[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_smile.PNG"  width="440"  height="570"  top="120"  ]
+[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_smile.png"  width="365"  height="865"  left="320"  top="70"  ]
 [tb_start_text mode=1 ]
 #瑞希
 「……先輩らしいね。――でも、ありがと」[p]
@@ -132,8 +133,8 @@
 僕はバッグから先端がマグネットになっている磁気ドライバーを取り出し、床に腹ばいになって、バッジに手を伸ばした。[p]
 [_tb_end_text]
 
-[chara_move  name="rui"  anim="false"  time="300"  effect="linear"  wait="true"  left="49"  top="-4"  width="500"  height="650"  ]
-[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_mouthopen.PNG"  width="440"  height="570"  left="438"  top="120"  reflect="false"  ]
+[chara_move  name="rui"  anim="false"  time="300"  effect="linear"  wait="true"  left="49"  top="-4"  width="400"  height="950"  ]
+[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_mouthopen.png"  width="365"  height="865"  left="510"  top="70"  reflect="false"  ]
 [tb_start_text mode=1 ]
 #瑞希
 「先輩、そこ汚いから汚れちゃうよ」[p]
@@ -148,8 +149,8 @@
 [_tb_end_text]
 
 [chara_hide  name="rui"  time="1000"  wait="true"  pos_mode="true"  ]
-[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_smile.PNG"  width="500"  height="650"  left="-8"  top="-2"  reflect="false"  ]
-[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.PNG"  width="440"  height="570"  left="404"  top="120"  reflect="false"  ]
+[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_smile.png"  width="400"  height="950"  left="150"  top="0"  reflect="false"  ]
+[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.png"  width="365"  height="865"  left="510"  top="70"  reflect="false"  ]
 [tb_start_text mode=1 ]
 #類
 「はい、取れたよ」[p]
@@ -158,7 +159,7 @@
 [_tb_end_text]
 
 [chara_hide_all  time="1000"  wait="true"  ]
-[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_smile.PNG"  width="440"  height="570"  top="120"  ]
+[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_smile.png"  width="365"  height="865"  left="320"  top="70"  ]
 [jump  storage="day3.ks"  target="*道具を使う_好感度高"  cond="f.likability>3"  ]
 [tb_start_text mode=1 ]
 #瑞希

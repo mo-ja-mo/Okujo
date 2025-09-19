@@ -3,8 +3,9 @@
 *day4_start
 
 [cm  ]
+[tb_eval  exp="f.likability+=0"  name="likability"  cmd="+="  op="t"  val="0"  ]
 [bg  storage="room.jpg"  time="1000"  ]
-[tb_ptext_show  x="387.00001525878906"  y="206.00001525878906"  size="49"  color="0xded3d7"  time="2000"  text="Day&nbsp;4"  anim="false"  face="cursive"  edge="undefined"  shadow="0x140e0e"  ]
+[tb_ptext_show  x="386.9999694824219"  y="218.00001525878906"  size="50"  color="0xded3d7"  time="2000"  text="Day&nbsp;4"  anim="false"  face="cursive"  edge="undefined"  shadow="0x140e0e"  ]
 [wait  time="1000"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
@@ -20,14 +21,14 @@
 [tb_hide_message_window  ]
 [bg  time="1000"  method="fadeIn"  storage="okujyo_normal.png"  ]
 [tb_show_message_window  ]
-[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.PNG"  width="437"  height="566"  left="281"  top="120"  reflect="false"  ]
+[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.png"  width="365"  height="865"  left="320"  top="70"  reflect="false"  ]
 [tb_start_text mode=1 ]
 購買でパンを買ってから屋上に行くと、既に昼休みだった。[p]
 瑞希くんはちょうどお昼を食べようとしていたようだった。[p]
 [_tb_end_text]
 
-[chara_move  name="mizuki"  anim="false"  time="300"  effect="linear"  wait="true"  left="445"  top="120"  width="437"  height="566"  ]
-[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.PNG"  width="500"  height="650"  left="116"  top="0"  reflect="false"  ]
+[chara_move  name="mizuki"  anim="false"  time="300"  effect="linear"  wait="true"  left="510"  top="70"  width="365"  height="865"  ]
+[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.png"  width="400"  height="950"  left="150"  top="0"  reflect="false"  ]
 [tb_start_text mode=1 ]
 #類
 「やあ、瑞希くん。僕もここでお昼を食べてもいいかい？」[p]
@@ -55,7 +56,7 @@
 サンドイッチにはレタスが入っていた。[p]
 [_tb_end_text]
 
-[chara_mod  name="rui"  time="600"  cross="true"  storage="chara/2/rui_aseri.PNG"  ]
+[chara_mod  name="rui"  time="600"  cross="true"  storage="chara/2/rui_aseri.png"  ]
 [tb_start_text mode=1 ]
 僕はこんな時のために常備しているピンセットを取り出し、千切れて残らないように細心の注意を払いながら、忌々しいレタスを引き抜いた。[p]
 #類
@@ -63,8 +64,8 @@
 #
 [_tb_end_text]
 
-[chara_move  name="rui"  anim="false"  time="300"  effect="linear"  wait="true"  left="86"  top="-4"  width="500"  height="650"  ]
-[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.PNG"  width="437"  height="566"  left="441"  top="120"  reflect="false"  ]
+[chara_move  name="rui"  anim="false"  time="300"  effect="linear"  wait="true"  left="150"  top="0"  width="400"  height="950"  ]
+[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.png"  width="365"  height="865"  left="510"  top="70"  reflect="false"  ]
 [tb_start_text mode=1 ]
 視線を感じて横を見ると、瑞希くんがじっと僕を見ていた。[p]
 #瑞希
@@ -74,18 +75,17 @@
 #
 [_tb_end_text]
 
-[chara_mod  name="mizuki"  time="600"  cross="true"  storage="chara/1/mzk_mouthopen.PNG"  ]
+[chara_mod  name="mizuki"  time="600"  cross="true"  storage="chara/1/mzk_mouthopen.png"  ]
 [tb_start_text mode=1 ]
 #瑞希
 「･･････先輩って、本当に野菜が嫌いなんだね」[p]
 #
 [_tb_end_text]
 
-[chara_mod  name="mizuki"  time="600"  cross="true"  storage="chara/1/mzk_smile.PNG"  ]
+[chara_mod  name="mizuki"  time="600"  cross="true"  storage="chara/1/mzk_smile.png"  ]
 [tb_start_text mode=1 ]
 #瑞希
-「よかったら、ボクのハムカツサンドと交換する？[p]
-この間も食べたから、野菜が入ってないのは確かだよ」[p]
+「よかったら、ボクのハムカツサンドと交換する？この間も食べたから、野菜が入ってないのは確かだよ」[p]
 #
 [_tb_end_text]
 
@@ -95,8 +95,8 @@
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #類
-「本当かい！？ ではこのカレーパンと交換でもいいかい？[p]
-サンドイッチはレタスだけ取ればいいけれど、カレーの方は取り除くのが大変なんだ。このパンしか残ってなくてね」[p]
+「本当かい！？ ではこのカレーパンと交換でもいいかい？」[p]
+「サンドイッチはレタスだけ取ればいいけれど、カレーの方は取り除くのが大変なんだ。このパンしか残ってなくてね」[p]
 #瑞希
 「いいよ。ボク カレー好きだし」[p]
 #
@@ -111,20 +111,19 @@
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 僕は憂鬱な思いでカレーパンを見つめた。[p]
-カレーパンのカレーには、通常タマネギやニンジンなどの野菜が入っている。[p]
-しかも煮崩れてルーと一体化していることが多く、分離は難しい。[p]
+カレーパンのカレーには、通常タマネギやニンジンなどの野菜が入っている。しかも煮崩れてルーと一体化していることが多く、分離は難しい。[p]
 通常ならまずこのパンを手に取ることはないが、今日は他に選択肢がなかった。[p]
 [_tb_end_text]
 
-[chara_mod  name="rui"  time="600"  cross="true"  storage="chara/2/rui_aseri.PNG"  ]
+[chara_mod  name="rui"  time="600"  cross="true"  storage="chara/2/rui_aseri.png"  ]
 [tb_start_text mode=1 ]
 #類
 「････････････」[p]
 #
 [_tb_end_text]
 
-[chara_move  name="rui"  anim="false"  time="300"  effect="linear"  wait="true"  left="86"  top="-4"  width="500"  height="650"  ]
-[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.PNG"  width="437"  height="566"  left="441"  top="120"  reflect="false"  ]
+[chara_move  name="rui"  anim="false"  time="300"  effect="linear"  wait="true"  left="150"  top="0"  width="400"  height="950"  ]
+[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.png"  width="365"  height="865"  left="510"  top="70"  reflect="false"  ]
 [tb_start_text mode=1 ]
 #瑞希
 「？」[p]
@@ -143,13 +142,13 @@
 僕はこんな時のために常備しているスプーンを手に取った。[p]
 けれど瑞希くんの手前、パンの中身を全部残すような行儀の悪いことはしづらい。[p]
 #類
-「･････････････････････････････････････[p]
-････････････････････････････････････････････････････････････」[p]
+「･･･････････････････････････････････」[p]
+「･･････････････････････････････････････････････････････････････････････････････」[p]
 #
 [_tb_end_text]
 
-[chara_move  name="rui"  anim="false"  time="300"  effect="linear"  wait="true"  left="86"  top="-4"  width="500"  height="650"  ]
-[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_mouthopen.PNG"  width="437"  height="566"  left="441"  top="120"  reflect="false"  ]
+[chara_move  name="rui"  anim="false"  time="300"  effect="linear"  wait="true"  left="150"  top="0"  width="400"  height="950"  ]
+[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_mouthopen.png"  width="365"  height="865"  left="510"  top="70"  reflect="false"  ]
 [tb_start_text mode=1 ]
 #瑞希
 「先輩、それ食べないの？ 好きじゃないとか？」[p]
@@ -183,15 +182,15 @@
 さすがに瑞希くんの手前、パンの中身を全部残すような行儀の悪いことはしづらい。[p]
 [_tb_end_text]
 
-[chara_move  name="rui"  anim="false"  time="300"  effect="linear"  wait="true"  left="86"  top="-4"  width="500"  height="650"  ]
-[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.PNG"  width="437"  height="566"  left="441"  top="120"  reflect="false"  ]
+[chara_move  name="rui"  anim="false"  time="300"  effect="linear"  wait="true"  left="150"  top="0"  width="400"  height="950"  ]
+[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.png"  width="365"  height="865"  left="510"  top="70"  reflect="false"  ]
 [tb_start_text mode=1 ]
 #瑞希
 「先輩、それ食べないの？ 好きじゃないとか？」[p]
 #
 [_tb_end_text]
 
-[chara_mod  name="rui"  time="600"  cross="true"  storage="chara/2/rui_aseri.PNG"  ]
+[chara_mod  name="rui"  time="600"  cross="true"  storage="chara/2/rui_aseri.png"  ]
 [tb_start_text mode=1 ]
 #類
 「中の野菜が少々ね･･････」[p]

@@ -4,7 +4,7 @@
 
 [cm  ]
 [bg  storage="room.jpg"  time="1000"  ]
-[tb_ptext_show  x="387.00001525878906"  y="206.00001525878906"  size="49"  color="0xded3d7"  time="2000"  text="Day&nbsp;5"  anim="false"  face="cursive"  edge="undefined"  shadow="0x140e0e"  ]
+[tb_ptext_show  x="386.9999694824219"  y="218.00001525878906"  size="50"  color="0xded3d7"  time="2000"  text="Day&nbsp;5"  anim="false"  face="cursive"  edge="undefined"  shadow="0x140e0e"  ]
 [wait  time="1000"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
@@ -14,7 +14,7 @@
 [tb_ptext_hide  time="1000"  ]
 [tb_hide_message_window  ]
 [bg  time="1000"  method="fadeIn"  storage="okujyo_normal.png"  ]
-[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.PNG"  width="437"  height="566"  left="281"  top="120"  reflect="false"  ]
+[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.png"  width="365"  height="865"  left="320"  top="70"  reflect="false"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 瑞希くんは先に来ていたようだ。[p]
@@ -46,8 +46,8 @@
 [jump  storage="day5.ks"  target="*day_end"  ]
 *雑談をする
 
-[chara_move  name="mizuki"  anim="false"  time="300"  effect="linear"  wait="true"  left="470"  top="120"  width="437"  height="566"  ]
-[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.PNG"  width="500"  height="650"  left="115"  top="-5"  reflect="false"  ]
+[chara_move  name="mizuki"  anim="false"  time="300"  effect="linear"  wait="true"  left="510"  top="70"  width="365"  height="865"  ]
+[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.png"  width="400"  height="950"  left="150"  top="0"  reflect="false"  ]
 [tb_eval  exp="f.likability+=1"  name="likability"  cmd="+="  op="t"  val="1"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
@@ -71,7 +71,7 @@
 [s  ]
 *雑談_好感度高
 
-[chara_mod  name="mizuki"  time="600"  cross="true"  storage="chara/1/mzk_mouthopen.PNG"  ]
+[chara_mod  name="mizuki"  time="600"  cross="true"  storage="chara/1/mzk_mouthopen.png"  ]
 [tb_start_text mode=1 ]
 #瑞希
 「そうなんだ。ボク、傘持ってこなかったな･･･」[p]
@@ -86,21 +86,20 @@
 [tb_eval  exp="f.likability+=2"  name="likability"  cmd="+="  op="t"  val="2"  val_2="undefined"  ]
 [chara_hide  name="mizuki"  time="1000"  wait="true"  pos_mode="true"  ]
 [chara_move  name="mizuki"  anim="false"  time="300"  effect="linear"  wait="true"  ]
-[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.PNG"  width="500"  height="650"  left="281"  top="0"  reflect="false"  ]
+[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.png"  width="400"  height="950"  left="280"  top="0"  reflect="false"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
-僕はラムネをポケットから出した。[p]
 #類
 「君もどうだい？」[p]
 #
 [_tb_end_text]
 
-[chara_move  name="rui"  anim="false"  time="300"  effect="linear"  wait="true"  left="86"  top="-4"  width="500"  height="650"  ]
-[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.PNG"  width="437"  height="566"  left="441"  top="120"  reflect="false"  ]
+[chara_move  name="rui"  anim="false"  time="300"  effect="linear"  wait="true"  left="150"  top="0"  width="400"  height="950"  ]
+[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.png"  width="365"  height="865"  left="510"  top="70"  reflect="false"  ]
 [tb_start_text mode=1 ]
 僕は瑞希くんの前で空っぽの手のひらを広げた。[p]
 瑞希くんは怪訝そうな顔をした。[p]
-いったん手を握ってから、ぱっと開くと僕の手のひらには飴玉が一つ乗っている。簡単な手品だ。[p]
+いったん手を握ってから、ぱっと開くと僕の手のひらには飴玉が１つ乗っている。簡単な手品だ。[p]
 [_tb_end_text]
 
 [jump  storage="day5.ks"  target="*サプライズ_好感度高"  cond="f.likability>5"  ]
@@ -131,15 +130,15 @@
 
 [tb_eval  exp="f.likability+=1"  name="likability"  cmd="+="  op="t"  val="1"  ]
 [chara_hide  name="mizuki"  time="1000"  wait="true"  pos_mode="true"  ]
-[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.PNG"  width="500"  height="650"  ]
+[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.png"  width="400"  height="950"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 僕は書きかけの演出案を練ることにして、ノートを取り出した[p]
 [_tb_end_text]
 
-[chara_mod  name="rui"  time="600"  cross="true"  storage="chara/2/rui_takurami.PNG"  ]
-[chara_move  name="rui"  anim="false"  time="300"  effect="linear"  wait="true"  left="86"  top="-4"  width="500"  height="650"  ]
-[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.PNG"  width="437"  height="566"  left="441"  top="120"  reflect="false"  ]
+[chara_mod  name="rui"  time="600"  cross="true"  storage="chara/2/rui_takurami.png"  ]
+[chara_move  name="rui"  anim="false"  time="300"  effect="linear"  wait="true"  left="150"  top="0"  width="400"  height="950"  ]
+[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.png"  width="365"  height="865"  left="510"  top="70"  reflect="false"  ]
 [jump  storage="day5.ks"  target="*作業をする_好感度高"  cond="f.likability>6"  ]
 [tb_start_text mode=1 ]
 ふと視線を感じて顔を上げると、僕を怪訝そうに見ていた瑞希くんと目が合った。[p]
@@ -155,7 +154,7 @@
 ふと視線を感じて顔を上げると、瑞希くんと目が合った。[p]
 [_tb_end_text]
 
-[chara_mod  name="mizuki"  time="600"  cross="true"  storage="chara/1/mzk_smile.PNG"  ]
+[chara_mod  name="mizuki"  time="600"  cross="true"  storage="chara/1/mzk_smile.png"  ]
 [tb_start_text mode=1 ]
 #瑞希
 「……先輩、楽しそうだね」[p]

@@ -2,9 +2,10 @@
 
 *day1_start
 
+[tb_ptext_hide  time="1000"  ]
 [cm  ]
 [bg  storage="room.jpg"  time="1000"  ]
-[tb_ptext_show  x="387.00001525878906"  y="206.00001525878906"  size="49"  color="0xded3d7"  time="2000"  text="Day&nbsp;1"  anim="false"  face="cursive"  edge="undefined"  shadow="0x140e0e"  ]
+[tb_ptext_show  x="386.9999694824219"  y="218.00001525878906"  size="50"  color="0xded3d7"  time="2000"  text="Day&nbsp;1"  anim="false"  face="cursive"  edge="undefined"  shadow="0x140e0e"  ]
 [wait  time="1000"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
@@ -12,7 +13,6 @@
 普段は授業を聞き流しながら脚本を書いたり、演出プランを練ったり、それなりに充実した時間を過ごしているのに、最近はつい窓の外を気にしてしまう。[p]
 今日は比較的気温が高く、雨も降りそうにない。[p]
 瑞希くんは屋上に来ているだろうか？[p]
-
 [_tb_end_text]
 
 [tb_ptext_hide  time="1000"  ]
@@ -36,7 +36,7 @@
 
 [bg  time="1000"  method="fadeIn"  storage="okujyo_normal.png"  ]
 [tb_show_message_window  ]
-[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.PNG"  width="500"  height="648"  left="239"  top="74"  reflect="false"  ]
+[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.png"  width="365"  height="865"  left="320"  top="70"  reflect="false"  ]
 [tb_start_text mode=1 ]
 瑞希くんは先に来ていたようだ。[p]
 僕は瑞希くんから少し距離を取って座った。[p]
@@ -45,6 +45,7 @@
 [tb_hide_message_window  ]
 [glink  color="btn_02_black"  storage="day1.ks"  size="20"  text="様子を見る"  target="*様子を見る"  x="250"  y="200"  width="200"  height=""  _clickable_img=""  ]
 [glink  color="btn_02_black"  storage="day1.ks"  size="20"  target="*雑談をする"  text="雑談をする"  autopos="false"  x="550"  y="200"  width="200"  height=""  _clickable_img=""  ]
+[glink  color="btn_02_black"  storage="day1.ks"  size="20"  text="サプライズをする"  autopos="false"  target="*サプライズをする"  x="250"  y="330"  width="200"  height=""  _clickable_img=""  ]
 [glink  color="btn_02_black"  storage="day1.ks"  size="20"  text="作業をする"  autopos="false"  target="*作業をする"  x="550"  y="330"  width="200"  height=""  _clickable_img=""  ]
 [s  ]
 *様子を見る
@@ -66,8 +67,8 @@
 [jump  storage="day1.ks"  target="*day_end"  ]
 *雑談をする
 
-[chara_move  name="mizuki"  anim="false"  time="300"  effect="linear"  wait="true"  left="380"  top="89"  width="500"  height="648"  ]
-[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.PNG"  width="500"  height="650"  left="115"  top="-5"  reflect="false"  ]
+[chara_move  name="mizuki"  anim="false"  time="300"  effect="linear"  wait="true"  width="365"  height="865"  left="510"  top="70"  ]
+[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.png"  width="400"  height="950"  left="150"  top="0"  reflect="false"  ]
 [tb_eval  exp="f.likability+=1"  name="likability"  cmd="+="  op="t"  val="1"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
@@ -92,13 +93,22 @@
 *サプライズをする
 
 [tb_eval  exp="f.likability+=1"  name="likability"  cmd="+="  op="t"  val="1"  ]
+[chara_move  name="mizuki"  anim="false"  time="300"  effect="linear"  wait="true"  width="365"  height="865"  left="510"  top="70"  ]
+[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.png"  width="400"  height="950"  left="150"  top="0"  reflect="false"  ]
 [tb_show_message_window  ]
-[jump  storage="day1.ks"  target="*サプライズ_好感度高"  cond="f.likability>5"  ]
 [tb_start_text mode=1 ]
-サプライズ　ノーマル[p]
+僕はラムネをポケットから出した。[p]
+#類
+「君も食べるかい？」[p]
+#
 [_tb_end_text]
 
-[jump  storage="day1.ks"  target="*day_end"  ]
+[jump  storage="day2.ks"  target="*サプライズ_好感度高"  cond="f.likability>5"  ]
+[tb_start_text mode=1 ]
+瑞希くんは小さく首を振った。[p]
+[_tb_end_text]
+
+[jump  storage="day2.ks"  target="*day_end"  ]
 [s  ]
 *サプライズ_好感度高
 
@@ -106,13 +116,13 @@
 サプライズ_好感度高[p]
 [_tb_end_text]
 
-[jump  storage="day1.ks"  target="*day_end"  ]
+[jump  storage="day2.ks"  target="*day_end"  ]
 [s  ]
 *作業をする
 
 [tb_eval  exp="f.likability+=1"  name="likability"  cmd="+="  op="t"  val="1"  ]
 [chara_hide  name="mizuki"  time="1000"  wait="true"  pos_mode="true"  ]
-[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.PNG"  width="500"  height="650"  ]
+[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.png"  width="400"  height="950"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 僕は持ってきた装置の製作を進めることにした。[p]

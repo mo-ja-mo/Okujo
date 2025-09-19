@@ -3,8 +3,9 @@
 *day6_start
 
 [cm  ]
+[tb_eval  exp="f.likability+=0"  name="likability"  cmd="+="  op="t"  val="0"  ]
 [bg  storage="room.jpg"  time="1000"  ]
-[tb_ptext_show  x="387.00001525878906"  y="206.00001525878906"  size="49"  color="0xded3d7"  time="2000"  text="Day&nbsp;6"  anim="false"  face="cursive"  edge="undefined"  shadow="0x140e0e"  ]
+[tb_ptext_show  x="386.9999694824219"  y="218.00001525878906"  size="50"  color="0xded3d7"  time="2000"  text="Day&nbsp;6"  anim="false"  face="cursive"  edge="undefined"  shadow="0x140e0e"  ]
 [wait  time="1000"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
@@ -19,7 +20,7 @@
 屋上には人影がなかった。[p]
 [_tb_end_text]
 
-[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.PNG"  width="437"  height="566"  left="281"  top="120"  reflect="false"  ]
+[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.png"  width="365"  height="865"  left="320"  top="70"  reflect="false"  ]
 [tb_start_text mode=1 ]
 と、そこに階段を上る足音が聞こえた。[p]
 #瑞希
@@ -39,7 +40,7 @@
 
 [tb_eval  exp="f.likability+=1"  name="likability"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
 [tb_show_message_window  ]
-[jump  storage="day6.ks"  target="*様子を見る_好感度高"  cond="f.likability>5"  ]
+[jump  storage="day6.ks"  target="*様子を見る_好感度高"  cond="f.likability>6"  ]
 [tb_start_text mode=1 ]
 瑞希くんは欠伸をした。[p]
 しばらくして瑞希くんは僕から見えない塔屋の裏側に移動してしまった。[p]
@@ -56,8 +57,8 @@
 [jump  storage="day6.ks"  target="*day_end"  ]
 *雑談をする
 
-[chara_move  name="mizuki"  anim="false"  time="300"  effect="linear"  wait="true"  left="470"  top="120"  width="437"  height="566"  ]
-[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.PNG"  width="500"  height="650"  left="115"  top="-5"  reflect="false"  ]
+[chara_move  name="mizuki"  anim="false"  time="300"  effect="linear"  wait="true"  left="510"  top="70"  width="365"  height="865"  ]
+[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.png"  width="400"  height="950"  left="150"  top="0"  reflect="false"  ]
 [tb_eval  exp="f.likability+=1"  name="likability"  cmd="+="  op="t"  val="1"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
@@ -74,7 +75,7 @@
 #
 [_tb_end_text]
 
-[jump  storage="day6.ks"  target="*雑談_好感度高"  cond="f.likability>5"  ]
+[jump  storage="day6.ks"  target="*雑談_好感度高"  cond="f.likability>6"  ]
 [tb_start_text mode=1 ]
 瑞希くんはうとうとしている。[p]
 [_tb_end_text]
@@ -93,43 +94,89 @@
 
 [tb_eval  exp="f.likability+=2"  name="likability"  cmd="+="  op="t"  val="2"  val_2="undefined"  ]
 [chara_hide  name="mizuki"  time="1000"  wait="true"  pos_mode="true"  ]
-[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.PNG"  width="500"  height="650"  left="281"  top="0"  reflect="false"  ]
+[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.png"  width="400"  height="950"  left="280"  top="0"  reflect="false"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
-僕はバッグの中から用意していたロボットを取り出した。[p]
-瑞希くんは興味を持ってくれたようで、ロボットをちらちらと見ている。[p]
+#類
+「今日はおやつを持ってきたんだ」[p]
+#
+僕はバッグからスマートフォンより一回りほど大きい、薄型の装置を取り出した。[p]
+カバーを外すと、表面には渦巻き型のニクロム線の上に金属製の網が嵌まっている。[p]
+#瑞希
+「……それ、なに？」[p]
+#類
+「ラジエントヒーターだよ。モバイルバッテリーの出力で作動するように改造してみたんだ」[p]
+#
+僕は用意してきた切り餅を上に置いた。[p]
+#類
+「これから寒くなるから、体が温まるようなものが持ち込めないかと思ってね。餅を焼く以外にも缶を温めたり、単純に手をかざして暖を取ることもできるよ。[p]
+まぁバッテリー1台につき30分程度の稼働時間になってしまうけどね」[p]
+#
+僕は紙皿を取り出して、醤油のミニパックの封を切った。[p]
 [_tb_end_text]
 
-[chara_move  name="rui"  anim="false"  time="300"  effect="linear"  wait="true"  left="86"  top="-4"  width="500"  height="650"  ]
-[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.PNG"  width="437"  height="566"  left="441"  top="120"  reflect="false"  ]
+[chara_mod  name="rui"  time="600"  cross="true"  storage="chara/2/rui_takurami.png"  ]
 [tb_start_text mode=1 ]
-ロボットを立たせてスイッチを押すと、15センチほどの高さのそのロボットは危なっかしい足取りで歩き出して、瑞希くんの前でピタリと止まった。[p]
-くるりと正面を向いた銀色のボディを、瑞希くんは食い入るように見ている。[p]
-パカリ、と唐突に頭部が開いた。[p]
 #類
-「どうぞ」[p]
+「ああ、ポップコーンを作るのもいいね。膨らむ前はコンパクトだし、賑やかで楽しそうだ」[p]
 #
-僕は中に入っているキャンディを僕は指さした。[p]
+[_tb_end_text]
+
+[chara_mod  name="mizuki"  time="600"  cross="true"  storage="chara/1/mzk_mouthopen.png"  ]
+[tb_start_text mode=1 ]
+#瑞希
+「先輩とポップコーンなんて、嫌な予感しかしない組み合わせなんだけど……」[p]
+#
+話しているうちに餅に焦げ目がついて膨らんできた。[p]
+[_tb_end_text]
+
+[chara_mod  name="rui"  time="600"  cross="true"  storage="chara/2/rui_normal.png"  ]
+[tb_start_text mode=1 ]
+#類
+「今日は醤油しか用意してないのだけどいいかい？」[p]
+#
 [_tb_end_text]
 
 [jump  storage="day6.ks"  target="*サプライズ_好感度高"  cond="f.likability>5"  ]
 [tb_start_text mode=1 ]
 #瑞希
-「……ありがとう」[p]
+「うん、ありがとう」[p]
 #
-瑞希くんはキャンディを取り出して口に入れた。[[p]
+瑞希くんは餅を頬張った。[p]
+
 [_tb_end_text]
+
+[chara_mod  name="mizuki"  time="600"  cross="true"  storage="chara/1/mzk_smile.png"  ]
+
+#瑞希
+「……こういうのもいいね」[p]
+#
+
 
 [jump  storage="day6.ks"  target="*day_end"  ]
 [s  ]
 *サプライズ_好感度高
 
-[chara_mod  name="mizuki"  time="600"  cross="true"  storage="chara/1/mzk_smile.PNG"  ]
+[chara_mod  name="mizuki"  time="600"  cross="true"  storage="chara/1/mzk_smile.png"  ]
 [tb_start_text mode=1 ]
 #瑞希
-「ありがとう。このロボットってもしかして先輩が作ったの？」[p]
+「ありがとう。ボク、磯辺焼き好きだよ」[p]
+#類
+「それならよかったよ」[p]
+#瑞希
+「……なんか、学校でキャンプしてるみたいで楽しいかも」[p]
 #
-瑞希くんの目が生き生きしている。」[p]
+[_tb_end_text]
+
+[chara_mod  name="rui"  time="600"  cross="true"  storage="chara/2/rui_takurami.png"  ]
+[tb_start_text mode=1 ]
+#類
+「フフフ。いろいろ焼いてみたくなるね」[p]
+#瑞希
+「……匂いが強いものとか、音が出るものとか、床が汚れるようなものは先生に怒られるかもよ」[p]
+#類
+「そこは気をつけるよ」[p]
+#
 [_tb_end_text]
 
 [jump  storage="day6.ks"  target="*day_end"  ]
@@ -138,15 +185,15 @@
 
 [tb_eval  exp="f.likability+=1"  name="likability"  cmd="+="  op="t"  val="1"  ]
 [chara_hide  name="mizuki"  time="1000"  wait="true"  pos_mode="true"  ]
-[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.PNG"  width="500"  height="650"  ]
+[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.png"  width="400"  height="950"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 僕は小型ロボットの製作を進めることにした。[p]
 [_tb_end_text]
 
-[chara_mod  name="rui"  time="600"  cross="true"  storage="chara/2/rui_takurami.PNG"  ]
-[chara_move  name="rui"  anim="false"  time="300"  effect="linear"  wait="true"  left="86"  top="-4"  width="500"  height="650"  ]
-[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.PNG"  width="437"  height="566"  left="441"  top="120"  reflect="false"  ]
+[chara_mod  name="rui"  time="600"  cross="true"  storage="chara/2/rui_takurami.png"  ]
+[chara_move  name="rui"  anim="false"  time="300"  effect="linear"  wait="true"  left="150"  top="0"  width="400"  height="950"  ]
+[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.png"  width="365"  height="865"  left="510"  top="70"  reflect="false"  ]
 [jump  storage="day6.ks"  target="*作業をする_好感度高"  cond="f.likability>6"  ]
 [tb_start_text mode=1 ]
 瑞希くんは僕が何をしているのか気になるようだ。[p]
@@ -169,7 +216,6 @@
 
 [tb_hide_message_window  ]
 [tb_ptext_hide  time="1000"  ]
-[s  ]
 [iscript]
 alert("day6終了です");
 alert("今の好感度は"+f.likability+"です");

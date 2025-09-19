@@ -4,7 +4,7 @@
 
 [tb_clear_images]
 
-[tb_eval  exp="sf.end_flag=1"  name="end_flag"  cmd="="  op="t"  val="1"  val_2="undefined"  ]
+[tb_eval  exp="sf.skip_flag=1"  name="skip_flag"  cmd="="  op="t"  val="1"  val_2="undefined"  ]
 [tb_keyconfig  flag="0"  ]
 [tb_hide_message_window  ]
 [bg  storage="title.jpg"  ]
@@ -22,11 +22,11 @@
 [tb_keyconfig  flag="1"  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [tb_image_hide  time="1000"  ]
-[jump  storage="prologue.ks"  target=""  cond="sf.end_flag==0"  ]
+[jump  storage="prologue.ks"  target=""  cond="sf.skip_flag==0"  ]
 [bg  time="1000"  method="crossfade"  storage="bg_black.png"  ]
 [mask_off  time="100"  effect="fadeOut"  ]
 [tb_ptext_show  x="250"  y="200"  size="30"  color="0xffffff"  time="100"  text="プロローグをスキップしますか？"  face="sans-serif,'メイリオ'"  anim="false"  edge="undefined"  shadow="undefined"  ]
-[glink  color="white"  storage="question.ks"  size="20"  text="はい"  autopos="false"  target=""  x="300"  y="350"  width=""  height=""  _clickable_img=""  ]
+[glink  color="white"  storage="day1.ks"  size="20"  text="はい"  autopos="false"  target="*day1_start"  x="300"  y="350"  width=""  height=""  _clickable_img=""  ]
 [glink  color="white"  storage="prologue.ks"  size="20"  text="いいえ"  target=""  autopos="false"  x="550"  y="350"  width=""  height=""  _clickable_img=""  ]
 [s  ]
 *load

@@ -3,7 +3,7 @@
 *day_start
 
 [bg  storage="room.jpg"  time="1000"  ]
-[tb_ptext_show  x="387.00001525878906"  y="206.00001525878906"  size="49"  color="0xded3d7"  time="1000"  text="Day&nbsp;X"  anim="false"  face="cursive"  edge="undefined"  shadow="0x140e0e"  ]
+[tb_ptext_show  x="386.9999694824219"  y="218.00001525878906"  size="50"   color="0xded3d7"  time="1000"  text="Day&nbsp;X"  anim="false"  face="cursive"  edge="undefined"  shadow="0x140e0e"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 晴れた月曜日の朝。いつものように登校して、自分の席に座る。[p]

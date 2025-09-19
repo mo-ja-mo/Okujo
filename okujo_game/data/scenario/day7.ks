@@ -3,8 +3,9 @@
 *day7_start
 
 [cm  ]
+[tb_eval  exp="f.likability+=0"  name="likability"  cmd="+="  op="t"  val="0"  ]
 [bg  storage="room.jpg"  time="1000"  ]
-[tb_ptext_show  x="387.00001525878906"  y="206.00001525878906"  size="49"  color="0xded3d7"  time="2000"  text="Day&nbsp;7"  anim="false"  face="cursive"  edge="undefined"  shadow="0x140e0e"  ]
+[tb_ptext_show  x="386.9999694824219"  y="218.00001525878906"  size="50"  color="0xded3d7"  time="2000"  text="Day&nbsp;7"  anim="false"  face="cursive"  edge="undefined"  shadow="0x140e0e"  ]
 [wait  time="1000"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
@@ -29,9 +30,9 @@
 *様子を見る
 
 [tb_eval  exp="f.likability+=1"  name="likability"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
-[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.PNG"  width="660"  height="858"  left="162"  top="44"  reflect="false"  ]
+[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.png"  width="400"  height="950"  left="150"  top="0"  reflect="false"  ]
 [tb_show_message_window  ]
-[jump  storage="day7.ks"  target="*様子を見る_好感度高"  cond="f.likability>5"  ]
+[jump  storage="day7.ks"  target="*様子を見る_好感度高"  cond="f.likability>7"  ]
 [tb_start_text mode=1 ]
 誰もいない屋上はがらんとして見えた[p]
 [_tb_end_text]
@@ -47,7 +48,7 @@
 [jump  storage="day7.ks"  target="*day_end"  ]
 *待ってみる
 
-[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.PNG"  width="660"  height="858"  left="158"  top="0"  reflect="false"  ]
+[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.png"  width="400"  height="950"  left="150"  top="0"  reflect="false"  ]
 [tb_eval  exp="f.likability+=1"  name="likability"  cmd="+="  op="t"  val="1"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
@@ -59,9 +60,9 @@
 足音がして、瑞希くんが屋上に現れた。[p]
 [_tb_end_text]
 
-[chara_move  name="rui"  anim="false"  time="300"  effect="linear"  wait="true"  left="-41"  top="0"  width="660"  height="858"  ]
-[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.PNG"  width="571"  height="742"  left="375"  top="122"  reflect="false"  ]
-[jump  storage="day7.ks"  target="*雑談_好感度高"  cond="f.likability>5"  ]
+[chara_move  name="rui"  anim="false"  time="300"  effect="linear"  wait="true"  width="400"  height="950"  left="150"  top="0"  ]
+[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.png"  width="365"  height="865"  left="510"  top="70" reflect="false"  ]
+[jump  storage="day7.ks"  target="*雑談_好感度高"  cond="f.likability>7"  ]
 [tb_start_text mode=1 ]
 #瑞希
 「……先輩、来てたんだ」[p]
@@ -84,7 +85,7 @@
 [s  ]
 *教室に戻る
 
-[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.PNG"  width="500"  height="650"  left="281"  top="0"  reflect="false"  ]
+[chara_show  name="rui"  time="1000"  wait="true"  storage="chara/2/rui_normal.png"  width="400"  height="950"  left="280"  top="0"  reflect="false"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 昨日は徹夜で作業に没頭してしまった。[p]
@@ -105,5 +106,5 @@ alert("今の好感度は"+f.likability+"です");
 
 [chara_hide_all  time="1000"  wait="true"  ]
 [tb_image_hide  time="1000"  ]
-[jump  storage="day7.ks"  target="*day7_start"  ]
+[jump  storage="day9.ks"  target="*day9_start"  ]
 [s  ]

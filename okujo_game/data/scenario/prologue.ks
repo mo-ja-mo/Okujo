@@ -23,7 +23,7 @@
 
 [tb_hide_message_window  ]
 [tb_show_message_window  ]
-[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.PNG"  width="599"  height="779"  left="171"  top="105"  reflect="false"  ]
+[chara_show  name="mizuki"  time="1000"  wait="true"  storage="chara/1/mzk_normal.png"  width="365"  height="865"  left="320"  top="70"  reflect="false"  ]
 [tb_start_text mode=1 ]
 暁山瑞希くん。[p]
 僕より一つ年下の中学二年生である瑞希くんとは、文化祭をきっかけに言葉を交わすようになった。[p]
