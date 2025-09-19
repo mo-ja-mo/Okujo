@@ -3,15 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="googlebot" content="nosnippet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
 
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
+    />
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+
     <link rel="stylesheet" href="design.css">
-    <title>news</title>
+    <title>News</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" defer type="text/javascript"></script>
 </head>
 <body>
-    <button onclick="location.href='okujo_game/index.html'">ゲームページへ</button>
+    <header>
+        <h1><a href="news.html">もけじゃがもまん</a></h1>
+    </header>
+    <main>
+        <img src="images/title.png" class="title_image" alt="タイトル画像">
+        <p class="warning">⚠️先行公開URLなので外部に公開しないでください！⚠️</p>
+        <button onclick="location.href='okujo_game/index.html'">ゲームページへ</button>
 
+        <a href="https://wavebox.me/wave/7m6jfia85d4iwgi3/" class="comment">
+            <img src="images/clap.png" alt="感想の送り先" style="width:15vw; max-width: 100px; vertical-align:middle; border: solid 2px lightcyan; border-radius: 50%;">
+            <p>　感想・バグ報告はこちらから</p>
+        </a>
+
+
+        <div data-simplebar data-simplebar-auto-hide="false" class="update">
+            <h2>更新情報</h2>
+            <p>2025/9/21 先行公開開始</p>
+        </div>
+        <div class="introduction">
+            <h2>ゲーム紹介</h2>
+            <a href="images/sample.png" data-lightbox="group"><img src="images/sample.png" alt="" width="300"></a>
+
+            <!-- <p>文化祭の日、屋上で出会った瑞希に類は心を惹かれる。</p>
+            <a href="images/sample.png" data-lightbox="group"><img src="images/sample.png" alt="" width="300"></a>
+            <p style="color: rgb(159, 91, 201);">「瑞希くんと親しくなりたい」</p>
+            <a href="images/sample.png" data-lightbox="group"><img src="images/sample.png" alt="ゲームのサンプル画像"></a>
+            <p>果たして類は瑞希と仲良くなれるのだろうか？</p>
+            <a href="images/sample.png" data-lightbox="group"><img src="images/sample.png" alt="ゲームのサンプル画像"></a> -->
+            <a>2025/9/21現在<br>全年齢対象<br>非CPルートのみ<br>プレイ時間?分程度<br>エンディング三種</a>
+        </div>
+        <button onclick="location.href='okujo_game/index.html'">ゲームページへ</button>
+        <button onclick="location.href='linkpage.html'">作者ページへ</button>
+
+    </main>
+    <footer>
+        <p>もけじゃがもまん</p>
+        <a href="https://x.com/okjo_novelgame?s=09"><img src="images/X.png" alt="Xのロゴ" style="width:50px; vertical-align:middle;"> @okjo_novelgame</a>
+    </footer>
 </body>
 </html>
