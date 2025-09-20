@@ -183,3 +183,14 @@ li img {
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.illust li img {
+    max-width: 180px;
+    height: 300px;
+    width: auto;
+    border: solid 2px darkcyan;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    object-fit: cover;
+    object-position: left top;
+}
